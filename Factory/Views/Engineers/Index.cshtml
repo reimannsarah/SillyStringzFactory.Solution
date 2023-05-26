@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Factory.Models
+
+@if (Model.Count == 0)
+{
+  <p>No Engineers Added Yet</p>
+}
+
+@foreach (Engineer engineer in Model)
+{
+  <p>@($"{engineer.Name}")</p>
+}
