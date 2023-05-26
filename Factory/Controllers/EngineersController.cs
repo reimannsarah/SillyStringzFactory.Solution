@@ -93,4 +93,13 @@ namespace Factory.Controllers;
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+    [HttpPost]
+    public ActionResult DeleteJoin(int joinId)
+    {
+      EngMachine joinEntry = _db.EngMachines.FirstOrDefault(entry => entry.EngMachineId == joinId);
+      _db.EngMachines.Remove(joinEntry);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
