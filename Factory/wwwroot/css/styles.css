@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+  --purple: #C874D9;
+  --orange: #D66853;
+  --lightBlue: #192BC2;
+  --mediumBlue: #150578;
+  --darkBlue: #0E0E52;
+}
+
+body {
+  background-color: #d66953c3;
+  font-family: CherryBomb, monospace;
+}
+
+.header {
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--purple);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar p {
+  margin-bottom: 0;
+}
+
+.navbar p a {
+  color: var(--darkBlue);
+  text-decoration: none;
+}
